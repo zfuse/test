@@ -1,0 +1,98 @@
+
+@charset "utf-8";
+@import "common.css";
+#banner {
+
+    height: 400px;
+    width: 100%;
+}
+#banner .banner .banner_txt {
+    float: left;
+    width: 380px;
+}
+#banner .banner .banner_img {
+    float: right;
+    margin: 0;
+    padding: 130px 0 0;
+    width: 590px;
+}
+#Map {
+    cursor: pointer;
+}
+#content {
+    clear: both;
+	overflow:hidden;
+    margin: 0 auto 20px;
+    padding: 0;
+    width: 960px;
+}
+#content .company {
+    float: left;
+    width: 480px;
+}
+.company .company_img {
+    float: left;
+}
+.company .company_txt {
+    float: right;
+    width: 360px;
+}
+.content a {
+    color: #666666;
+    font: 12px/18px "宋体";
+    text-decoration: none;
+}
+.content a:hover {
+    color: #137852;
+    font: 12px/18px "宋体";
+    text-decoration: underline;
+}
+.company_txt .bold {
+    color: #888886;
+    font-weight: bold;
+}
+#content .case {
+    float: right;
+    width: 410px;
+}
+.case .case_img {
+    float: left;
+}
+.case .case_txt {
+    float: right;
+    width: 240px;
+}
+.case_txt .conent li {
+    color: #666666;
+    font: 12px/18px "宋体";
+}
+.case_txt .conent li a {
+    color: #666666;
+    font: 12px "宋体";
+    text-decoration: none;
+}
+.case_txt .conent li a:hover {
+    color: #137852;
+    font: 12px/18px "宋体";
+    text-decoration: underline;
+}
+#brand {
+    background: none repeat scroll 0 0 #DAB866;
+    height: 60px;
+    width: 100%;
+}
+#brand .brand_content {
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+}
+.brand_txt {
+    float: left;
+    margin: 0;
+    padding: 20px 0 0;
+}
+.brand_img {
+    float: right;
+    margin: 0;
+    padding: 5px 0 0;
+}

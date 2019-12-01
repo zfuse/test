@@ -1,0 +1,206 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/semantic.css' %}">
+    <link rel="stylesheet" href="{% static 'css/semantic.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/map.css' %}">
+    <link rel="stylesheet" href="{% static 'css/onemap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/left.css' %}">
+    <link rel="stylesheet" href="{% static 'css/layui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/create.css' %}">
+	<title>湖北省</title>
+</head>
+<body>
+<div class="title1">
+    <div class="logo">
+        <img class="img" src="{% static 'images/hubei.jpg' %}">
+        <a href="http://127.0.0.1:8000/pro_ershoufang/">湖北房价信息网</a>
+    </div>
+</div>
+    <div id="map" style="width:800px;height: 500px;"></div>
+
+    <div class="leaflet-top leaflet-right"><div class="my-custom-control leaflet-control">
+        <div id="contentBox">
+            <div id="datashowbox" class="info legend leaflet-control new_input">
+                <div class="js-hidebox"></div>
+                <div class="datahtml">    <div class="mapuibox">
+                        <div class="utitle">
+                    <h2 class="utith">湖北房价<b>(2018年08月)</b></h2>
+                </div>
+
+                <div class="hide_q">
+                    <div class="onemap_sy clearfix">
+                        <div class="price-l">
+                            <div class="price40">
+                                <p>总价中位数：
+                                    <span class="mr5 numr">129<em>万元/套</em></span>
+                                    <span class="bac_count">
+                                        <span class="bac_coutHov">
+            全国挂牌交易房源的房价中位数水平与房源供给量，与此页面中设置的面积、户型、建筑类型、建筑年代、单价、总价等条件不相关。
+                                        </span>
+                                    </span>
+                                </p>
+                                <p><span class="gray9">供给量：10万套</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="map_subordinate">
+                            湖北城市
+                    </div>
+                </div>
+                <div class="ucont">
+                    <table class="table-style2 mb">
+                        <thead>
+                        <tr class="bg-color">
+                            <th width="15%">序号</th>
+                            <th>城市</th>
+                            <th width="40%">房价 (万元/㎡)</th>
+                            <th>供给量（万套）</th>
+                        </tr>
+                        </thead>
+                        <tbody class="tb">
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <a target="_blank" href=" &#10;/city/bj.html">武汉</a>
+                            </td>
+                            <td>6.30</td>
+                            <td>6.59</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <a target="_blank" href="/city/sh.html">荆州</a>
+                            </td>
+                            <td>5.41</td>
+                            <td>16.1</td>
+                        </tr>
+                                        <tr>
+                            <td>3</td>
+                            <td>
+                                <a target="_blank" href="/city/gz.html">黄石</a>
+                            </td>
+                            <td>3.31</td>
+                                                    <td>10.0</td>
+                                            </tr>
+                                        <tr>
+                            <td>4</td>
+                            <td>
+                                <a target="_blank" href="/city/hz.html">黄冈</a>
+                            </td>
+                            <td>3.15</td>
+                                                    <td>4.84</td>
+                                            </tr>
+                                        <tr>
+                            <td>5</td>
+                            <td>
+                                <a target="_blank" href="/city/nj.html">咸宁</a>
+                            </td>
+                            <td>2.91</td>
+                                                    <td>5.65</td>
+                                            </tr>
+                                        <tr>
+                            <td>6</td>
+                            <td>
+                                <a target="_blank" href="/city/fz.html">宜昌</a>
+                            </td>
+                            <td>2.68</td>
+                                                    <td>2.42</td>
+                                            </tr>
+                                        <tr>
+                            <td>7</td>
+                            <td>
+                                <a target="_blank" href="/city/tj.html">襄阳</a>
+                            </td>
+                            <td>2.49</td>
+                                                    <td>6.46</td>
+                                            </tr>
+                                        <tr>
+                            <td>8</td>
+                            <td>
+                                <a target="_blank" href="/city/jn.html">随州</a>
+                            </td>
+                            <td>1.97</td>
+                                                    <td>4.01</td>
+                                            </tr>
+                                        <tr>
+                            <td>9</td>
+                            <td>
+                                <a target="_blank" href="/city/wh.html">恩施</a>
+                            </td>
+                            <td>1.88</td>
+                                                    <td>6.81</td>
+                                            </tr>
+                                        <tr>
+                            <td>10</td>
+                            <td>
+                                <a target="_blank" href="/city/cd.html">孝感</a>
+                            </td>
+                            <td>1.66</td>
+                                                    <td>5.46</td>
+                                            </tr>
+
+                                        </tbody>
+                    </table>
+                </div>
+
+                        <a href="/rank/capitalforsale.html?y=2018&amp;m=08" target="_blank" class="map_more">查看更多</a>
+                        <img src="/images/pricemap/china_sale_mark.png">
+            </div>
+        </div>
+    </div>
+
+<script src="https://img.hcharts.cn/highmaps/highmaps.js"></script>
+<script src="https://data.jianshukeji.com/geochina/hubei.js"></script>
+<script>
+// 随机数据
+var data = [
+    {"name":"武汉","value":5303},
+    {"name":"黄石","value":601},
+{#    {"name":"十堰","value":35},#}
+    {"name":"宜昌","value":5578},
+    {"name":"襄阳","value":1147},
+    {"name":"鄂州","value":2640},
+    {"name":"荆门","value":839},
+    {"name":"孝感","value":180},
+    {"name":"荆州","value":1590},
+    {"name":"黄冈","value":2034},
+    {"name":"咸宁","value":37},
+    {"name":"随州","value":97},
+    {"name":"恩施","value":94},
+    {"name":"仙桃","value":2099},
+{#    {"name":"潜江","value":20},#}
+{#    {"name":"天门","value":67},#}
+{#    {"name":"神农架","value":44}#}
+];
+{#// 初始化图表#}
+var map = new Highcharts.Map('map', {
+  title: {
+    text: '湖北省'
+  },
+  colorAxis: {
+    min: 0,
+    minColor: 'rgb(255,255,255)',
+    maxColor: '#006cee'
+  },
+  credits:{
+      enabled:false
+  },
+  series: [{
+    data: data,
+    name: '房屋出售量',
+    mapData: Highcharts.maps['cn/hubei'],
+    joinBy: 'name', // 根据 name 属性进行关联
+    dataLabels:{
+        enabled:true,
+        color:'#000',
+        format:'{point.properties.name}'
+    }
+  }]
+});
+</script>
+</body>
+</html>

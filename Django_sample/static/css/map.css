@@ -1,0 +1,26 @@
+
+.title1{
+    width: 100%;
+    background: #fff;
+    /*position: fixed;*/
+    /*z-index: 99990;*/
+    border-bottom: 1px solid #ebebeb;
+    height: 50px;
+    box-shadow: 0px 1px 6px rgba(150, 150, 150, 0.5);
+}
+.logo{
+    padding:5px 0 0 0;
+}
+.title1 .logo a{
+    font-size: 20px;
+    padding: 2px 0 0 0;
+}
+.title1 .img{
+    width: 50px;
+    height: 25px;
+}
+
+#map{
+    display:inline-block;
+}
+

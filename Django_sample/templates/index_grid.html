@@ -1,0 +1,91 @@
+{% extends 'pro_xin.html' %}
+{% block paihan %}
+<div class="ui equal width grid" style="margin: 5px 0 5px 0;width: 100%">
+            <div class="row">
+                <div class="column">
+                    <div class="ui container segment">
+                        <div class="ui compact menu">
+                              <div class="ui simple dropdown item">
+                                  武汉
+                                  <i class="dropdown icon"></i>
+                                  <div class="menu">
+                                      <div class="item" id="choice1_JK">洪山区</div>
+                                      <div class="item" id="choice2_XH">华容区</div>
+                                      <div class="item" id="choice3_QX">黄陂区</div>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="ui container" id="char1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+{% block chartjs %}
+     <script >
+
+        $('#choice1_JK').click(function(){
+            $('#char1').highcharts( {
+                title: {
+                    text: '洪山区房屋销售量排行TOP10'
+                },
+
+                subtitle: {
+                    text: '数据来源: Wikipedia.org'
+                },
+                yAxis: {
+                    title: {
+                        text: '套',
+                    },
+                },
+                credits:{
+                    enabled:false
+                },
+                series: {{ chart_JK|safe }}
+                });
+            });
+    </script>
+    <script >
+        $('#choice2_XH').click(function(){
+            $('#char1').highcharts( {
+                title: {
+                    text: '华容区房价房屋销售量排行TOP10'
+                },
+                subtitle: {
+                    text: '数据来源: Wikipedia.org'
+                },
+                yAxis: {
+                    title: {
+                        text: '套',
+                    },
+                },
+                credits:{
+                    enabled:false
+                },
+                series: {{ chart_XH|safe }}
+                });
+            });
+    </script>
+    <script >
+        $('#choice3_QX').click(function(){
+            $('#char1').highcharts( {
+                title: {
+                    text: '黄陂区房屋销售量排行TOP10'
+                },
+                subtitle: {
+                    text: '数据来源: Wikipedia.org'
+                },
+                yAxis: {
+                    title: {
+                        text: '套',
+                    },
+                },
+
+                credits:{
+                    enabled:false
+                },
+                series: {{ chart_QX|safe }}
+                });
+            });
+    </script>
+{% endblock %}

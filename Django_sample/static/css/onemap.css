@@ -1,0 +1,47 @@
+.leaflet-top{
+    float: right;
+    margin:50px 20px 0 0;
+}
+.table-style2 {
+    margin: 10px 0 0 20px;
+}
+/*onemap 右框*/
+.mapuibox                           {box-shadow:1px 1px 5px #999;z-index:10000;background:#FFF;width: 330px;display: table;position: relative;border-radius: 15px; top:-28px;}
+
+.mapuibox .utitle                   {display: inline-block;width: 100%;background: #ebf5fe;border-radius: 10px 10px 0 0;}
+.mapuibox .utitle .utith            {font-size:18px;margin: 10px 10px;}
+.mapuibox .utitle .utith span       {font-size:14px;font-weight: normal;color:#909090;}
+#detailsTitle 						{float: left;line-height: 30px;margin: 18px 15px 10px 20px;width: 218px;}
+.mapuibox .utitle b 				{float: right;font-size:14px;font-weight: normal;color:#909090;}
+.mapuibox .utitle .specialTime 		{margin: 20px 15px 0 0;}
+.mapuibox .table-style2 .bg-color th{border-bottom: 0;}
+.mapuibox .more                     {display: inherit;font-size:12px;margin:0 auto;color:#a2d1f8;font-weight:normal;height:25px;line-height:25px;text-align: center;}
+.mapuibox img                       {position: absolute;bottom: -345px;right: 0;}
+.mapuibox .map_subordinate 			{display: inline-block;width: 93%;font-size:15px;line-height:30px;height:30px;padding-left: 10px;border-top:2px solid #ebf5fe;}
+.mapuibox .map_ranking 				{padding-left: 6px;margin: 10px 0 10px 0;}
+.mapuibox .map_ranking table 		{width: 100%;}
+.mapuibox .map_ranking tr 			{text-align: center;}
+.mapuibox .map_ranking th 			{font-weight: 500;height: 28px;line-height: 28px;}
+.mapuibox .map_ranking td 			{color:#a2d1f8;height: 24px;line-height: 24px;}
+.mapuibox .map_more 				{display: block;background: #ebf5fe;font-size:12px;color:#a2d1f8;font-weight:normal;height:30px;line-height:30px;width: 100%;text-align: center;border-radius: 0 0 10px 10px;}
+.mapuibox .map_evaluate 			{margin: 10px 0 10px 0;}
+
+.map_evaluate form 					{margin: 15px 0 0 32px;}
+.ev_acreage input 					{width: 62px;height: 23px;background: #eff8ff;border: 1px solid #eee;}
+.map_evaluate sapn 					{margin: 0 4px;}
+.ev_floor input 					{width: 32px;height: 23px;background: #eff8ff;border: 1px solid #eee;}
+.map_evaluate .floor_h   				{margin-right: 14px;}
+.ev_floor .floor_al  				{margin-left: 30px;}
+.ev_basement                        {font-size: 12px;color: #999;margin-left: 10px;}
+.evaluate_btn 						{height: 60px;line-height: 77px;text-align: center;color: #009edd;font-size: 16px; cursor:pointer}
+
+.price40 p 			 			    {line-height: 48px;color: #333;font-size: 14px;}
+.price40 p .mr5 			        {margin-left: 10px;}
+.price40 p .mr5 em 			        {color: #909090;font-size: 12px;margin-left: 10px;}
+
+.bac_count:hover .bac_coutHov 		{display: block;}
+.bac_coutHov 						{display: none; height: 73px; width: 318px;position: absolute;left: -254px;top: 42px;border: 1px solid #000;line-height: 24px;background: #fff;padding-left: 10px;}
+.map_subordinate span 			    {font-size: 12px;color: #909090;}
+.percent_map                        {line-height: 48px;margin-right: 47px;color: #FF0000;font-size: 14px; float: right;}
+.percent_map  b                     {font-weight: 900;font-size: 16px;margin-right: 6px;}
+

@@ -1,0 +1,384 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*css reset star*/
+html								{color:#333;background:#f1f1f1;}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,
+dl,dt,dd,ul,ol,li,pre,form,fieldset,
+legend,button,input,textarea,th,td	{margin:0;padding:0;}
+body,button,input,select,textarea	{font:12px/1.5 tahoma, arial, \5b8b\4f53;}
+h1,h2,h3,h4,h5,h6					{font-size:100%;}
+address,cite,dfn,em,var				{font-style:normal;}
+code,kbd,pre,samp					{font-family:courier new, courier, monospace;}
+small								{font-size:12px;}
+ul,ol								{list-style:none;}
+a									{text-decoration:none;}
+a:hover								{text-decoration:none;}
+sup									{vertical-align:text-top;}
+sub									{vertical-align:text-bottom;}
+legend								{color:#000;}
+fieldset,
+img									{border:0;}
+button,
+input,
+select,
+textarea							{font-size:100%;}
+table								{border-collapse:collapse;border-spacing:0;}
+a									{text-decoration:none;color:#333;}
+a:hover, a:focus					{text-decoration:none;color:#ff5256;}
+
+strong								{font-weight:bold;}
+input[type=submit]					{cursor:pointer;}
+button								{cursor:pointer;}
+*:focus								{outline:none;}
+h1,h2,h3,h4,h5,h6					{font-weight:bold;/*font-family:"Hiragino Sans GB","Microsoft YaHei",tahoma,arial,simhei;*/}
+/*css reset end*/
+
+.hr 								{font-size:1px;line-height:1px;clear:both;height:10px;}/*留出10像素的间隙*/
+.clear								{clear:both;font-size:0px;height:0px;line-height:0px;}/*清楚ie6 浮动造成的重复文字*/
+.m									{margin:0 auto;}
+.b									{font-weight:bold;}
+span.none-b							{font-weight:normal;}
+.pos-rel							{position:relative;}
+.w960								{width:960px;}
+.border_none						{border:none;}
+.display_none						{display:none;}
+/*f_开头为float漂浮,l:左 r:右*/
+.fl									{float:left;}
+.fr									{float:right;}
+/*m_开头位margin边距,t:上 b:下 l:左 r:右*/
+.mt									{margin-top:10px;}
+.mt5								{margin-top:5px;}
+.mt15								{margin-top:15px;}
+.mt20								{margin-top:20px;}
+.mt30								{margin-top:30px;}
+.mt40								{margin-top:40px;}
+.mt50								{margin-top:50px;}
+
+.mb									{margin-bottom:10px;}
+.mb5								{margin-bottom:5px;}
+.mb15								{margin-bottom:15px;}
+.mb20								{margin-bottom:20px;}
+.mb25								{margin-bottom:25px;}
+.mb30								{margin-bottom:30px;}
+.mb40								{margin-bottom:40px;}
+.mb50								{margin-bottom:50px;}
+.mb60								{margin-bottom:60px;}
+
+.ml									{margin-left:10px;}
+.ml5								{margin-left:5px;}
+.ml15								{margin-left:15px;}
+.ml20								{margin-left:20px;}
+.ml30								{margin-left:30px;}
+.ml40								{margin-left:40px;}
+.ml50								{margin-left:50px;}
+
+.mr									{margin-right:10px;}
+.mr5								{margin-right:5px;}
+.mr15								{margin-right:15px;}
+.mr20								{margin-right:20px;}
+.mr30								{margin-right:30px;}
+.mr40								{margin-right:40px;}
+.mr50								{margin-right:50px;}
+.mr60								{margin-right:60px;}
+
+/*padding*/
+.p5									{padding:5px}
+.p10								{padding:10px}
+.p15								{padding:15px}
+.p20								{padding:20px}
+.p25								{padding:25px}
+.p30								{padding:30px}
+
+.pt5								{padding-top:5px}
+.pt10								{padding-top:10px}
+.pt15								{padding-top:15px}
+.pt20								{padding-top:20px}
+.pt25								{padding-top:25px}
+.pt30								{padding-top:30px}
+
+.pb5								{padding-bottom:5px}
+.pb10								{padding-bottom:10px}
+.pb15								{padding-bottom:15px}
+.pb20								{padding-bottom:20px}
+.pb25								{padding-bottom:25px}
+.pb30								{padding-bottom:30px}
+
+.pl5								{padding-left:5px}
+.pl10								{padding-left:10px}
+.pl15								{padding-left:15px}
+.pl20								{padding-left:20px}
+.pl25								{padding-left:25px}
+.pl30								{padding-left:30px}
+
+.pr5								{padding-right:5px}
+.pr10								{padding-right:10px}
+.pr15								{padding-right:15px}
+.pr20								{padding-right:20px}
+.pr25								{padding-right:25px}
+.pr30								{padding-right:30px}
+
+.cur								{cursor:pointer}
+
+.page_pa40							{padding:40px 0 40px 0;}
+/*c_开头为字体颜色*/
+.gray0								{color:#000;}
+.gray3								{color:#333;}
+.gray6								{color:#666;}
+.gray9								{color:#999;}
+.graya								{color:#aaa;}
+.grayc								{color:#ccc;}
+.grayd								{color:#ddd;}
+
+.blue	 							{color:#1b69c9!important;}
+.c_blue								{color:#1b69c9!important;}
+.red,
+.c_red								{color:#ff5256;font-family:arial;}
+.green								{color:#55a500;font-family:arial;}
+.orange								{color:#f60;}
+a.uline								{text-decoration:underline;}
+
+.clearfix:after						{content:".";height:0;visibility:hidden;display:block;clear:both;}
+.clearfix							{display:inline-block;}
+.clearfix							{display:block;}
+/*w_开头表示宽度,bdr_为对边框的设置,这两个组合使用*/
+.pr									{position:relative}
+.abs-right,.pa						{position:absolute}
+.abs-right							{right:0}
+.zoom								{zoom:1}
+.none,
+.dn									{display:none}
+.w									{width:100%}
+.w780								{width:780px;}
+.w770								{width:770px;}
+.w740								{width:740px;}
+.w720								{width:720px;}
+.w700								{width:700px;}
+.w690								{width:690px;}
+.w680								{width:680px;}
+.w670								{width:670px;}
+.w550								{width:550px;}
+.w510								{width:510px;}
+.w500								{width:500px;}
+.w260								{width:260px;}
+.w270								{width:270px;}
+.w270								{width:270px;}
+.w250								{width:250px;}
+.w230								{width:230px;}
+.w210								{width:210px;}
+.w200								{width:200px;}
+.w190								{width:190px;}
+.w180								{width:180px;}
+.w150								{width:150px;}
+.w100								{width:100px;}
+.w80								{width:80px;}
+.w60								{width:60px;}
+
+
+.box850								{width:850px;}
+.box810								{width:810px;}
+.box300								{width:300px;}
+.box360								{width:360px;}
+.box320								{width:320px;}
+.box310								{width:310px;}
+.box270								{width:270px;}
+.box660								{width:660px;}
+.box275								{width:275px;}
+.box630								{width:630px;}
+.box520								{width:520px;}
+.box210								{width:210px;}
+.box940								{width:940px;}
+.box1180							{width: 1180px;}
+/*fs_开头的是字体大小*/
+.f12								{font-size:12px}
+.f13								{font-size:13px}
+.f14								{font-size:14px}
+.f16								{font-size:16px}
+.f18								{font-size:18px}
+.f20								{font-size:20px}
+.f30								{font-size:30px}
+
+.fn									{font-weight:400}
+.t2									{text-indent:2em}
+
+/*lh_开头的是行距*/
+.lh18								{line-height:18px;}
+.lh21								{line-height:21px;}
+.lh30								{line-height:30px;}
+.lh150								{line-height:150%}
+.lh180								{line-height:180%}
+.lh200								{line-height:200%}
+
+.unl								{text-decoration:underline}
+.no_unl								{text-decoration:none}
+
+.arial								{font-family:arial}
+.simsun,
+.more								{font-family:'宋体'}
+.yahei								{font-family:"Hiragino Sans GB","Microsoft YaHei",tahoma,arial,simhei;}
+
+
+/*v开头表示垂直对齐方式，t开头横向对齐方式，组合使用*/
+.vt									{vertical-align:top;}
+.vm									{vertical-align:middle;}
+.tc									{text-align:center;}
+.tr									{text-align:right;}
+.tl									{text-align:left;}
+.wp									{word-wrap:break-word;word-break:normal;}/*字符串不换行*/
+.bk									{display:table-cell;display:inline-block;*display:inline;zoom:1;vertical-align:top;}
+/*最小高度*/
+.mh600								{min-height:600px;height:auto !important;height:600px;overflow:visible;}
+.mh500								{min-height:500px;height:auto !important;height:500px;overflow:visible;}
+
+/*图片隐藏*/
+.img-h								{display:block;overflow:hidden;text-align:center;}
+.img-box							{display:block;}
+
+.inner								{width:1180px;margin:0 auto;}
+
+/*按钮样式集*/
+.btn 								{display:table-cell;display:inline-block;*display:inline;zoom:1;vertical-align:top;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;border-radius:4px;}
+
+.btn-red 							{color:#fff;background-color:#ff5256;border-color:#ff5256;}
+.btn-red.active,
+.btn-red.focus,
+.btn-red:active,
+.btn-red:focus,
+.btn-red:hover						{color:#fff;background-color:#ff5256;border-color:#ff5256;}
+
+.btn-blue 							{color:#fff;background-color:#337ab7;border-color:#2e6da4;}
+.btn-blue.active,
+.btn-blue.focus,
+.btn-blue:active,
+.btn-blue:focus,
+.btn-blue:hover						{color:#fff;background-color:#286090;border-color:#204d74;}
+
+.btn-orange 						{color:#fff;background-color:#f0ad4e;border-color:#eea236;}
+.btn-orange.active,
+.btn-orange.focus,
+.btn-orange:active,
+.btn-orange:focus,
+.btn-orange:hover					{color:#fff;background-color:#ec971f;border-color:#d58512;}
+
+.btn-green 							{color:#fff;background-color:#5cb85c;border-color:#4cae4c;}
+.btn-green.active,
+.btn-green.focus,
+.btn-green:active,
+.btn-green:focus,
+.btn-green:hover					{color:#fff;background-color:#449d44;border-color:#398439;}
+
+.btn-gray 							{color:#aaa;background-color:#e5e5e5;border-color:#999;}
+.btn-gray.active,
+.btn-gray.focus,
+.btn-gray:active,
+.btn-gray:focus,
+.btn-gray:hover						{color:#aaa;background-color:#e5e5e5;border-color:#999;}
+
+
+/*价格*/
+/*price*/
+.price								{font-size:12px;font-weight:bold; font-family:Arial, Helvetica, sans-serif;}
+.price .num							{font-size:12px;}
+
+.price14							{font-size:14px;font-weight:bold; font-family:Arial, Helvetica, sans-serif;}
+.price14 .num						{font-size:16px;}
+
+/*price12*/
+.price12							{font-size:12px;line-height:18px;font-weight:normal;}
+.price12 .num,.price12 .wz,.price12 .wz_c{display:table-cell; display:inline-block; *display:inline;zoom:1; vertical-align:top;height:18px;overflow:hidden;}
+.price12 .num						{font-size:16px;padding:0 3px; font-family:Tahoma, Geneva, sans-serif;color:#ff5256;}
+/*price21*/
+.price21							{font-size:12px;line-height:18px;font-weight:normal;}
+.price21 .num,.price21 .wz,.price21 .wz_c{display:table-cell; display:inline-block; *display:inline;zoom:1; vertical-align:top;height:21px;overflow:hidden;}
+.price21 .num						{font-size:21px;padding-right:3px;font-family:Tahoma, Geneva, sans-serif;color:#ff5256}
+/*price32*/
+.price32							{font-size:12px;color:#ff6600; font-family:Arial, Helvetica, sans-serif;line-height:34px;font-weight:normal;height:34px;}
+.price32 .num,.price32 .wz,.price32 .wz_c{display:table-cell; display:inline-block; *display:inline;zoom:1; vertical-align:top;height:34px;overflow:hidden;}
+.price32 .num						{font-size:32px;line-height:30px;padding-right:3px;}
+.price32 .wz						{line-height:38px;}
+/*price80*/
+.price80							{color:#ff6600; font-family:Tahoma, Geneva, sans-serif;font-weight:normal;height:75px;overflow:hidden;}
+.price80 .num,.price80 .wz			{display:table-cell; display:inline-block; *display:inline;zoom:1; vertical-align:top;height:80px;overflow:hidden;}
+.price80 .num						{font-size:80px;line-height:90px;margin-top:-15px;padding-right:3px;font-weight:normal;}
+.price80 .wz						{font-size:25px;line-height:100px;}
+
+/*price18*/
+.price18							{font-size:12px;line-height:18px;font-weight:normal;}
+.price18 .num,.price18 .wz,.price18 .wz_c{display:table-cell; display:inline-block; *display:inline;zoom:1; vertical-align:top;height:21px;overflow:hidden;}
+.price18 .num						{font-size:18px;padding-right:3px;font-family:Tahoma, Geneva, sans-serif;color:#ff5256;}
+.price18 .wz_c						{line-height:24px;}
+
+/*price24*/
+.price24							{font-size:12px;font-weight:normal; line-height:24px;}
+.price24 .num,.price24 .wz,.price24 .wz_c{display:table-cell; display:inline-block; *display:inline;zoom:1; vertical-align:top;height:28px;line-height:28px;overflow:hidden;}
+.price24 .num						{font-size:24px;padding-right:3px;font-family:Tahoma, Geneva, sans-serif;color:#ff5256; }
+.price24 .wz_c						{line-height:32px;}
+.price24 .wz						{line-height:32px;}
+
+/*price24*/
+.price24							{font-size:12px;font-weight:normal; line-height:24px;}
+.price24 .num,.price24 .wz,.price24 .wz_c{display:table-cell; display:inline-block; *display:inline;zoom:1; vertical-align:top;height:26px;line-height:26px;overflow:hidden;}
+.price24 .num						{font-size:24px;font-family:Tahoma, Geneva, sans-serif;color:#ff5256; }
+.price24 .wz_c						{line-height:32px;}
+.price24 .wz						{line-height:32px;}
+
+/*price40*/
+.price40							{font-size:12px;font-weight:normal; line-height:24px;}
+.price40 .numr,
+.price40 .numg,
+.price40 .num,
+.price40 .wz,
+.price40 .wz_c						{display:table-cell; display:inline-block; *display:inline;zoom:1; vertical-align:top;height:40px;line-height:41px;overflow:hidden;}
+.price40 .numr,
+.price40 .num,
+.price40 .numg						{font-size:40px;font-family:Tahoma, Geneva, sans-serif;color:#ff5256; }
+.price40 .numg						{color:#390;}
+.price40 .num						{color:#000;}
+.price40 .wz_c						{line-height:56px;color:#999;_line-height:70px;*line-height:70px;}
+.price40 .wz						{line-height:56px;}
+
+
+/*price60*/
+.price60							{font-size:12px;font-weight:normal; line-height:24px;}
+.price60 .numr,
+.price60 .numg,
+.price60 .num,
+.price60 .wz,
+.price60 .wz_c						{display:table-cell; display:inline-block; *display:inline;zoom:1; vertical-align:top;height:60px;line-height:61px;overflow:hidden;}
+.price60 .numr,
+.price60 .num,
+.price60 .numg						{font-size:60px;font-family:Tahoma, Geneva, sans-serif;color:#ff5256; }
+.price60 .numg						{color:#390;}
+.price60 .num						{color:#000;}
+.price60 .wz_c						{line-height:95px;}
+
+
+
+
+
+
+
+
+/*menu-list1*/
+.menu-list1							{}
+.menu-list1 li						{border-top:1px solid #f1f1f1;line-height:38px;padding-left:15px;font-family:"微软雅黑";font-size:14px;}
+.menu-list1 .gmore					{padding-left:20px;}
+
+/*menu-list2*/
+.menu-list2							{}
+.menu-list2 li						{border-top:1px solid #f1f1f1;height:38px;line-height:38px;font-family:"微软雅黑";font-size:14px;}
+.menu-list2 .gmore					{border-top:1px dotted #ebebeb;height:18px;padding-top:10px;}
+
+/*table-style2*/
+.table-style2       				{width:100%;}
+.table-style2 th,
+.table-style2 td     				{font-weight:normal;text-align:center;padding:5px 3px;}
+.table-style2 td    				{}
+.table-style2 td a   				{color:#666;}
+.table-style2 td a:hover   			{color:#ff5256;}
+.table-style2 .bg-color th			{border-bottom:1px dotted #ebebeb;color:#999;}
+.table-style2 td.tr,
+.table-style2 th.tr					{text-align:right;}
+
+
+

@@ -1,0 +1,277 @@
+﻿@charset "utf-8";
+* {
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	list-style: none;
+}
+html,body{-webkit-text-size-adjust:none;}
+a{blr:expression(this.onFocus=this.blur());
+	font: 12px "宋体";
+}
+a:focus {
+     outline:none;
+     -moz-outline:none;
+}
+body {
+	font: 12px "宋体";
+	color: #636060;
+	width:100%;
+}
+img {
+	border-width: 0px;
+}
+a {
+	font: 12px "宋体";
+	text-decoration: none;
+	cursor:pointer;
+	color: #666;
+}
+a:hover {
+	color: #137852;
+	text-decoration: none;
+}
+.clearfix {
+	font-size: 0px;
+	line-height: 0px;
+	height: 0px;
+	width: 0px;
+	clear: both;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+.bold  {
+	font-size: 12px;
+	color: #696969;
+	font-weight: bold;
+}
+.h1  {
+	font: 16px/16px "微软雅黑";
+	color: #424241;
+	margin: 0px 0px 10px;
+	padding: 0px;
+}
+.h1 a
+{
+	font: 16px/16px "微软雅黑";
+	color: #424241;
+	margin: 0px 0px 10px;
+	padding: 0px;
+	text-decoration:none;
+}
+.h1 a:hover
+{
+	color: #137852;
+	text-decoration:underline;
+}
+.more {
+	color: #999;
+	font: bold 10px "宋体";
+	margin: 5px 0px 0px;
+	padding: 0px;
+}
+.more a {
+	font: 10px Arial, Helvetica, sans-serif;
+	color: #2a884d;
+	text-decoration: none;
+	margin: 0px 3px 0px 0px;
+	padding: 0px;
+}
+.more a:hover {
+	text-decoration: underline;
+}
+#top {
+	background: url(../images/top_bg.jpg) repeat-x 0px 0px;
+	height: 124px;
+	width: 100%;
+}
+#top .header {
+	height: 124px;
+	width: 960px;
+	margin: 0px auto;
+	padding: 0px;
+}
+.header .head_ban {
+	background: url(../images/top_banbg.jpg) no-repeat 0px 0px;
+	float: right;
+	height: 35px;
+	margin: 0px;
+	padding: 0px 22px 0px 20px;
+}
+.head_ban .contact {
+	float: left;
+	width: 145px;
+	height: 15px;
+	margin: 0px;
+	padding: 10px 0px 0px;
+}
+.contact a {
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #666666;
+	text-decoration: none;
+	margin: 0px 5px;
+	padding: 0px;
+}
+.contact a:hover
+{ color: #137852;
+text-decoration:underline;}
+.head_ban .search {
+	float: right;
+	width: 128px;
+	height: 20px;
+	border: 1px solid #eaeaea;
+	margin: 5px 0px 0px;
+	padding: 0px;
+}
+.search input{
+	color:#787878;
+	font: 11px/20px Arial, Helvetica, sans-serif;
+	border-width: 0px;
+	background:none;
+}
+.searchinputdiv{
+	width:90px;
+	float:left;
+	padding: 0px;
+	height: 20px;
+	margin: 0px 5px;
+	overflow: hidden;
+}
+.searchinput{
+	width:90px;
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	line-height: 20px;
+	height: 20px;
+}
+.searchbuttondiv{
+	width:16px;
+	height:20px;
+	float:left;
+	margin: 2px 0px 0px 2px;
+	padding: 0px;
+	background: url(../images/search.png) no-repeat 0px 0px;
+	_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src='images/search.png');
+}
+.searchbutton{
+	width:16px;
+	height:16px;
+	cursor:pointer;
+	padding: 0px;
+	margin: 0px;
+}
+.header .head {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	width: 960px;
+}
+.logo {
+	float: left;
+	width: 140px;
+	margin: 0px;
+	padding: 10px 0px 0px;
+}
+.nav {
+	float: right;
+	width: 610px;
+	margin: 0px;
+	padding: 40px 0px 0px;
+	height: 26px;
+}
+.nav li {
+	height: 26px;
+	float: left;
+	width: 72px;
+	margin:0px 0px 0px 50px;
+	_margin:0px 0px 0px 40px;
+}
+
+.nav li a{
+	display: block;
+	height: 26px;
+	width: 72px;
+	font: 13px/26px "微软雅黑";
+	color: #137852;
+	text-align: center;
+}
+.nav li a:hover
+{
+	color: #D0AA44;
+	text-decoration: none;
+	background-color: #eeeeee;
+}
+#bottom {
+	background: #f8f8f8;
+	height: 230px;
+	width: 100%;
+	clear: both;
+}
+#footer {
+	margin: 0px auto;
+	padding: 45px 0px 0px;
+	width: 960px;
+	height: 185px;
+}
+#footer .foot {
+	width: 960px;
+	height: 150px;
+}
+
+.foot .footer_link {
+	float: left;
+	width: 800px;
+}
+.footer_link dl {
+	float: left;
+	width: 200px;
+}
+.footer_link dl dt {
+	margin: 0px 0px 10px;
+	padding: 0px;
+}
+.footer_link dl dt a {
+	font: bold 12px "微软雅黑";
+	color: #666;
+}
+.footer_link dl dt a:hover {
+	text-decoration: underline;
+}
+.footer_link dl dd a {
+	font: 12px/18px "宋体";
+	color: #666666;
+	text-decoration: none;
+}
+.footer_link dl dd a:hover {
+	color: #137852;
+	text-decoration: underline;
+}
+
+.foot .footer_right {
+	float: left;
+	font: 9px Arial, Helvetica, sans-serif;
+	color: #8a8a8a;
+	width: 160px;
+}
+.footer_right .gzhy {
+	font: bold 12px "微软雅黑";
+	color: #666;
+}
+.footer_right .share {
+	margin: 15px 0px;
+	padding: 0px;
+}
+.share a {
+	padding: 0px;
+	margin: 0px 5px 0px 0px;
+	float: left;
+}
+
+#footer .copright {
+	font: 11px "微软雅黑";
+	color: #8a8a8a;
+}

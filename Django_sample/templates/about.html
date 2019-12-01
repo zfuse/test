@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Author" contect="http://www.webqin.net">
+<title>湖北房价</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link type="text/css" href="{% static 'css/css1.css' %}" rel="stylesheet" />
+<link rel="stylesheet" href="{% static 'css/semantic.css' %}">
+<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/js.js' %}"></script>
+<script type="text/javascript">
+ $(function(){
+	 //导航定位
+	 $(".nav li:eq(6)").addClass("navCur");
+	 })
+</script>
+</head>
+
+<body> 
+ <div class="header">
+  <div class="width1190">
+   <div class="fl">您好，欢迎来到湖北房价网！</div>
+   <div class="fr">
+   <a href="http://127.0.0.1:8000/login">登录</a> |
+   <a href="http://127.0.0.1:8000/reg">注册</a> |
+   <a href="http://127.0.0.1:8000/mlogin/">管理者</a> |
+   <a href="javascript:;" onclick="SetHome(this,window.location)">设为首页</a>
+   </div>
+   <div class="clears"></div>
+  </div><!--width1190/-->
+ </div><!--header/-->
+ <div class="logo-phone">
+  <div class="width1190">
+   <h1 class="logo"><a href="http://127.0.0.1:8000/highchart/"><img src="{% static 'images/hubei.jpg' %}" width="163" height="59" /></a></h1>
+   <div class="phones"><strong>021-63179891</strong></div>
+   <div class="clears"></div>
+  </div><!--width1190/-->
+ </div><!--logo-phone/-->
+ <div class="list-nav">
+  <div class="width1190">
+   <div class="list">
+    <h3>湖北房价</h3>
+{#    <div class="list-list">#}
+{#     <dl>#}
+{#      <dt><a href="javascript:;">房源区域</a></dt>#}
+{#      <dd>#}
+{#      <a href="javascript:;">武汉</a>#}
+{#       <a href="javascript:;">黄石</a>#}
+{#       <a href="javascript:;">宜昌</a>#}
+{#       <a href="javascript:;">襄阳</a>#}
+{#       <a href="javascript:;">鄂州</a>#}
+{#       <a href="javascript:;">荆门</a>#}
+{#       <a href="javascript:;">孝感</a>#}
+{#       <a href="javascript:;">荆州</a>#}
+{#       <a href="javascript:;">黄冈</a>#}
+{#       <a href="javascript:;">咸宁</a>#}
+{#       <a href="javascript:;">随州</a>#}
+{#       <a href="javascript:;">恩施</a>#}
+{#       <a href="javascript:;">仙桃</a>#}
+{#      </dd>#}
+{#     </dl>#}
+{#       <dl>#}
+{#      <dt><a href="http://127.0.0.1:8000/pro_ershoufang/">租房</a></dt>#}
+{#      <dd>#}
+{#       <a href="pro_zu.html">租金</a>#}
+{#       <a href="pro_zu.html">出租方式</a>#}
+{#       <a href="pro_zu.html">面积</a>#}
+{#       <a href="pro_zu.html">房型</a>#}
+{#      </dd>#}
+{#     </dl>#}
+{#     <dl>#}
+{#      <dt><a href="http://127.0.0.1:8000/pro_ershoufang/">二手房</a></dt>#}
+{#      <dd>#}
+{#       <a href="pro_er.html">价格</a>#}
+{#       <a href="pro_er.html">面积</a>#}
+{#       <a href="pro_er.html">房型</a>#}
+{#      </dd>#}
+{#     </dl>#}
+{#    </div>#}
+   </div><!--list/-->
+   <ul class="nav">
+    <li><a href="http://127.0.0.1:8000/highchart/">首页</a></li>
+    <li><a href="http://127.0.0.1:8000/pro_ershoufang/">租房</a></li>
+    <li><a href="http://127.0.0.1:8000/chart/">房屋发行量</a></li>
+    <li><a href="http://127.0.0.1:8000/pro_ershoufang/">二手房</a></li>
+    <li class="zhiding"><a href="javascript:;">指定购房</a></li>
+    <li><a href="http://127.0.0.1:8000/user_jingji">申请自由经纪人</a></li>
+    <li><a href="http://127.0.0.1:8000/about/">关于我们</a></li>
+    <div class="clears"></div>
+   </ul><!--nav/-->
+   <div class="clears"></div>
+  </div><!--width1190/-->
+ </div><!--list-nav/-->
+ <div class="banner" style="background:url({% static 'images/ban.jpg' %}) center center no-repeat;"></div>
+ 
+ <div class="content">
+  <div class="width1190">
+   <div class="contleft">
+    <ul class="leftNav">
+     <li class="leftNavCur"><a href="http://127.0.0.1:8000/about/">关于我们</a></li>
+     <li><a href="contact.html">联系我们</a></li>
+    </ul><!--leftNav/-->
+   </div><!--contleft/-->
+   <div class="contright">
+    <h2 class="rightat">公司简介</h2>
+    <div class="about">
+     <img src="{% static 'images/about.jpg' %}" /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;湖北房价简介：一站式全球旅游地产导购平台<br />
+　　湖北房价智房是国内最大的旅游地产导购平台，致力于为用户提供最便捷的一站式全球置业体验，用最好的互联网技术为用户解决“买什么房，去哪里买，
+    找谁买”的问题。湖北房价佳业信息技术有限公司旗下网站，目前已有超过300万注册用户，200万每日浏览量
+    ，覆盖国内80多个旅游地产城市及20多个境外置业热点地区，以更符合旅游地产行业特点的平台创新，成功实现买卖双方的跨地区对接，在线购房登记量达到80000人次/年，来电购房咨询量突破100，000通/年，平均1.2分钟就有一个用户通过智房平台享受专业导购服务，已成为中国发展最快的房地产互联网公司之一。
+   湖北房价诚挚欢迎一切合作伙伴，用务实而有前瞻性的商业模式，共同拓展旅游地产这个最具成长性的垂直商业领域。
+<br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;买家服务：异地置业前、中、后一体化服务<br />
+　　湖北房价在全球范围内，精选最具投资价值的旅游地产置业目的地，为用户提供全面及时的城市情报、景区环境、楼盘导购与购房优惠，帮助用户轻而易举的实现异地置业前的信息咨询、置业中的交易互动、置业后的房屋管理等一体化服务。
+　　为方便用户快速找到目标楼盘、及时与楼盘所属企业进行交易对接，建立了“国内最大的旅游地产楼盘库”、“全球最大的中文景区索引”以及“80多个旅游地产城市专题”，通过对搜索引擎结果的四维关联，让城市、景区、楼盘、网店充分结合，在任意界面，都设立了直通卖家的400电话专线及在线登记与导购功能。
+　　同时，湖北房价通过对用户需求的细分，保持与用户长期紧密的互动，以俱乐部形式巩固和发展用户，以积分商城的形式回馈用户，用户可以通过多种方式在智房网上获得积分回馈，并有机会获得联盟商家提供的旅游、高尔夫、骑马、滑雪等高端旅游休闲服务，并通过举办置业讲座、旅游度假、节日聚会，加强用户之间的横向联系，让智房成为用户一生受用的旅游、度假、投资平台。
+<br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卖家服务：以最低的成本实现营销渠道全球化<br />
+　　区别于所有以城市分站模式运营的传统房地产网站，智房将全球购买力集于一站，以站内导购的方式，将置业用户与目标楼盘快速对接，房产企业只需在智房一个平台上，就可以实现全国性营销渠道的精准到达，既节约了营销成本，又提高了成交效率。
+　　在此基础上，智房将“网店”工具化，将企业推广、楼盘营销、客户管理、舆论引导等模块整合在一个网店之中，并通过独立后台实现微博互动、邮件群发、短信群发等二次营销，企业或个人卖家，通过开通智房网店，就可以分享庞大的平台购买力，好比在一个人流巨大的MALL中设立了自己的品牌专柜。
+<br /><br />
+    </div>
+   </div><!--contright/-->
+   <div class="clears"></div>
+  </div><!--width1190/-->
+ </div><!--content/-->
+ 
+ <div class="footer">
+  <div class="width1190">
+   <div class="fl"><a href="http://127.0.0.1:8000/highchart/"><strong>湖北房价网</strong></a><a href="http://127.0.0.1:8000/about/">关于我们</a><a href="contact.html">联系我们</a><a href="http://127.0.0.1:8000/user/">个人中心</a></div>
+   <div class="fr">
+    <dl>
+     <dt><img src="{% static 'images/erweima.png' %}" width="76" height="76" /></dt>
+     <dd>微信扫一扫<br />房价点评，精彩发布</dd>
+    </dl>
+    <dl>
+     <dt><img src="{% static 'images/erweima.png' %}" width="76" height="76" /></dt>
+     <dd>微信扫一扫<br />房价点评，精彩发布</dd>
+    </dl>
+    <div class="clears"></div>
+   </div>
+   <div class="clears"></div>
+  </div><!--width1190/-->
+ </div><!--footer/-->
+ <div class="copy">Copyright@ 2015 邻居大妈 版权所有 沪ICP备1234567号-0&nbsp;&nbsp;&nbsp;&nbsp;技术支持：<a target="_blank" href="http://www.webqin.net/">秦王网络</a> </div>
+ <div class="bg100"></div>
+ <div class="zhidinggoufang">
+  <h2>指定购房 <span class="close">X</span></h2>
+  <form action="#" method="get">
+   <div class="zhiding-list">
+    <label>选择区域：</label>
+    <select>
+     <option>智慧园</option>
+     <option>立民村</option>
+     <option>塘口村</option>
+     <option>勤劳村</option>
+     <option>芦胜村</option>
+     <option>知新村</option>
+    </select>
+   </div>
+   <div class="zhiding-list">
+    <label>方式：</label>
+    <select>
+     <option>租房</option>
+     <option>新房</option>
+     <option>二手房</option>
+    </select>
+   </div>
+   <div class="zhiding-list">
+    <label>联系方式：</label>
+    <input type="text" />
+   </div>
+   <div class="zhidingsub"><input type="submit" value="提交" /></div>
+  </form>
+  <div class="zhidingtext">
+   <h3>指定购房注意事宜：</h3>
+   <p>1、请详细输入您所需要购买的房源信息(精确到小区)</p>
+   <p>2、制定购房申请提交后，客服中心会在24小时之内与您取得联系</p>
+   <p>3、如有任何疑问，请随时拨打我们的电话：400-000-0000</p>
+  </div><!--zhidingtext/-->
+ </div><!--zhidinggoufang/-->
+</body>
+</html>
